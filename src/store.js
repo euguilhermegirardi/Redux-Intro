@@ -14,30 +14,28 @@ function counterReducer(state = 0, action) {
   return state;
 };
 
-function todosReducer(state = [], action) {
-  switch(action.type) {
-    case 'CREATE_TODO':
-      return state.concat([action.payload]);
+// function todosReducer(state = [], action) {
+//   switch(action.type) {
+//     case 'CREATE_TODO':
+//       return state.concat([action.payload]);
 
-    case 'DELETE_TODO':
-      return state.filter((item, index) => index !== action.id);
+//     case 'DELETE_TODO':
+//       return state.filter((item, index) => index !== action.id);
 
-    case 'UPDATE_TODO':
-      return state.map((item, index) => index === action.id ? action.payload : item );
+//     case 'UPDATE_TODO':
+//       return state.map((item, index) => index === action.id ? action.payload : item );
 
-    default:
-      return state;
-  }
-};
+//     default:
+//       return state;
+//   }
+// };
 
 const store = createStore(
   combineReducers({
-    todos: todosReducer,
+    // todos: todosReducer,
     counter: counterReducer
   }),
   applyMiddleware(logger)
 );
-
-
 
 export default store;
