@@ -2,7 +2,7 @@
 
 ## About the exercise
 
-- The **Redux-Intro** is a simple exercise built with [**_React Redux_**](https://react-redux.js.org/) that approaches the basics of Redux.
+- The **Redux-Intro** is a simple exercise built with [**_React Redux_**](https://react-redux.js.org/) that approaches the basics of Redux-Hooks.
 
 ## The functionality
 
