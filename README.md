@@ -1,4 +1,4 @@
-# Redux-Intro
+# Redux-Hooks-Intro
 
 ## About the exercise
 
